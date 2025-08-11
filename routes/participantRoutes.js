@@ -34,7 +34,7 @@ function normalizeRow(row) {
 
 
 
-router.get('/participants',isLoggedIn, async (req, res) => {
+router.get('/participants', async (req, res) => {
   const results = [];
 
  fs.createReadStream('./uploads/participants.csv')
@@ -57,3 +57,4 @@ router.get('/participants',isLoggedIn, async (req, res) => {
 });
 
 module.exports = router;
+
