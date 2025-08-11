@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 }).then(() => console.log("MongoDB connected"))
   .catch(err => console.log("MongoDB connection error:", err));
-
+console.log("server");
 // Use API routes
 app.use("/api/problem-form", problemFormRoutes);
 app.use("/api/auth", authRoute);
